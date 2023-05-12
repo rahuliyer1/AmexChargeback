@@ -1,0 +1,151 @@
+AUDIT:
+********
+AD0PIA0X RECORD  37115 FROM 11May 17:24:09.72  OUT ON IA0T01X  SEQ: 60106
+  Msg-type=0200  Bit-map=723E448188E28801 Pan=376215XXXXX4008
+  Proc code=000000  Tran amt=000000000120 Tran datetime=0511172409
+Trace nbr=020294 Local time=17:24:09 Local date=05/11 Exp date=FF/FF
+Sett date=05/11 Merchant=5912 Pos entry=010 Pos cond=48 Acqr inst id=579002
+Fwd inst id=600924 Retr ref=313107895198 Crd acpt trmid=50646661
+Crd acpt id=42298585560134
+Crd acpt loc=HERBALIFE AUSTRALASIA  Sydney OlympiNSAU
+Natl data=CCVXXXX\CCT1\CCI1\ECM31\SLI05\LEN020\XID......P.(.GiB..n...O\LEN020\
+CAV.....P...11V.P......\ Tran curr=036 Sec control=0000000000000001
+Mac code 1=3C5C1FD700000000
+
+AD0PIA0X RECORD  37116 FROM 11May 17:24:10.38   IN ON IA0T01X  SEQ: 60107
+  Msg-type=0210  Bit-map=322200018EC20801  Proc code=000000
+Tran amt=000000000120 Tran datetime=0511172409 Trace nbr=020294
+Sett date=05/11 Acqr inst id=579002 Fwd inst id=600924 Retr ref=313107895198
+Auth id=280849  Resp code=00  Crd acpt trmid=50646661
+Crd acpt id=42298585560134  Natl data=CCVM\ Sec control=0000000000000001
+Mac code 1=41FA509700000000
+
+Logger:
+********
+msg^code= 0400 step= 09 source= $PF12X destination= $PLG1 reply^tag= 00000
+reply^exp= 00000 msg^length= 6067
+
+SEGMENT  1 = Required for settlement:
+segment^flags= %b1111000100000000 0011100100000000 mti= 1210
+  proc^code^tran^type= 00 proc^code^from^type= 00 proc^code^to^type= 00
+acct^qual^1=   acct^qual^2=   func^code= 200  act^code= 000 msg^reason^acq=
+auth^life^cycle^code=   auth^life^cycle^int=   datetime= 11May23 17:24:09
+  ret^ref= 313107895198 sys^trace= 020294 crd^acpt^term= 50646661
+crd^acpt^id= 42298585560134 crd^acpt^info^ind= %b11010100
+crd^acpt^name^loc= HERBALIFE AUSTRALASIA  Sy                              dne
+y OlympiNS crd^acpt^reg= NSW crd^acpt^cntry= AU crd^acpt^pc= 2127
+crd^acpt^cnty=   crd^acpt^bus= 5912 merch^type= 5912 clerk^id= .
+  net^term^id= F12XAB acqr^cntry= 036 acq^inst^id= 57900291  acq^net^id= 788
+acq^prcs^id= $PF12X acq^recon^date= 11May23 acq^recon^ind=
+acq^rpt^inst= 57900291 acq^proc^id= AQF12X acq^rpt^branch= 00000   PAN= 3762159
+56814008 crd^seq^nbr=   cntry^pan= 036 conv^crd^bill= 00000001
+iss^inst^id= 37 iss^recon^ind=   iss^recon^date= 11May23 P^proc^id= ISIA0X
+P^iss^rpt^id= 3701  P^iss^net^id= 009 P^rcode^iss=   P^prcs^id= $PIA0X
+P^spon^bnk=   P^rte^type= 0 P^rte^ap= 00000 P^map^req= 00000  P^map^resp= 00000
+A^proc^id=   A^iss^rpt^id=   A^iss^net^id=   A^rcode^iss=
+A^prcs^id=   A^spon^bnk=   A^rte^type= 0 A^rte^ap= 00000 A^map^req= 00000
+A^map^resp= 00000 acct^typ^1=   acct^id^1=   acct^typ^2=   acct^id^2=
+acct^typ^3=   acct^id^3=   alt^cust^id=   M  auth^by= I rev^by=
+cntry^agent=   inst^agent=   app^code= 280849 cnx^net^id= PROD
+split^trans^type= 000 split^flow^ind= 0 net^recon^date= 11May23
+cur^recon^net= 036 conv^recon^net= 00000001 date^effect=   date^exp= 27/05
+term^class= 25 pos^data^crd^in^cap= 1 pos^data^crdhld^auth^cap= 0
+pos^data^crd^capt^cap= 0 pos^data^op^env= 0 pos^data^crdhld^pres= 0
+pos^data^crd^pres= 0 pos^data^crd^in^mode= 1 pos^data^crdhld^auth^meth= 0
+pos^data^crdhld^auth= 0 pos^data^crd^out^cap= 0 pos^data^term^out^cap= 4
+pos^data^pin^capt^cap= 1 crd^cat= 01 crd^logo= AMEX prnt^mask=
+ext^pay^cd=   date^rqst= 11May 07:24:09 cur^type= 00 cur^tran= 036
+cur^crd^bill= 036  amt^tran= 000000000120 orig^amt^tran= 000000000000
+orig^amt^recon^acq= 000000000000 orig^amt^crd^bill= 000000000000
+orig^amt^recon^iss= 000000000000 amt^crd^bill= 000000000120
+amt^crd^bill^fee= 000000000 proc^flag0= %b0000000001000001
+proc^flag1= %b0000000000000000 proc^flag2= %b0100100000000110
+proc^flag3= %b0001100000000000 proc^bill^flag0= %b0000000000000000
+proc^bill^flag1= %b0000000000000000 proc^bill^flag2= %b0000000000000000
+proc^bill^flag3= %b0000000000000000 m00= 11May23 17:24:09:71
+m01= 11May23 17:24:09:72 m02= 11May23 17:24:10:38 m03= 11May23 17:24:10:38
+m04= 11May23 17:24:10:38 m05=   m06= 11May23 17:24:09:71
+m07= 11May23 17:24:09:71 m08= 11May23 17:24:09:71 m09=   m10=
+m11= 11May23 17:24:09:71 m12= 11May23 17:24:09:71 m13= 11May23 17:24:09:71
+m14= 11May23 17:24:10:38
+
+SEGMENT  2 = Problem determination data:
+cntr^id=   circ^id^acq= IPGB24X3 circ^id^iss= AMEXGPX tsap^id= F12XT03
+term^tot^typ=   date^capt=   date^act=   sevr^code^ichg^des= 1 sevr^code= 01
+app^code^len=   ob^term^grp=   lang^code=   contract^id=   src^rte^id=
+crd^logo^list^id= FDIPGB24 crd^logo^dflt=   cbase^dflt=   rest^grp= FDIPGB24
+tset^id= FDIPGB24 rte^id= AMEXPOS1 crd^opt^id= SWP0005S crd^ichg^id= AMEX
+crd^logo^opt^id=   trk^key^id= DEFTRCK trk^key^nbr= 2 trk^key^seq^nbr= 0
+trk^1^2^ind=   trk^1^2=   trk^3^2^ind=   trk^3^2=   card^prefix= 37
+standin^act=   standin^act^appr=   standin^act^deny= 121 standin^opt= 00000
+standin^lim0= 000000000000 standin^lim1= 000000000000
+standin^lim2= 000000000000 standin^lim3= 000000000000
+standin^lim4= 000000000000 standin^lim5= 000000000000
+standin^lim6= 000000000000 standin^lim7= 000000000000
+standin^lim8= 000000000000 us^upd^flg= %b1100110011111100
+us^upd^flg^9= %b11000000 us^upd^typ0= 00002 us^upd^typ1= 00000
+us^upd^typ2= 00003 us^upd^typ3= 00000 us^upd^typ4= 00002 us^upd^typ5= 00003
+us^upd^typ6= 00001 us^upd^typ7= 00000 us^upd^typ8= 00001 tsap^idx= 000000002
+tsap^msg^nbr= 00001 flr^lmt^acq= 000000000000 flr^lmt^iss= 000000000000
+send^adv^opt= 00001 online^fee^group=   serv^fee^grp= 00000
+auth^req^tim= 00020 resp^ack^tim= 00060 dest^rte^opt= 00004
+dir^rte^opt= 00002 pin^data^frmt= -00001 pin^result= 00000 max^pin^try= 00000
+pmc^err= %hFFFF preauth^comp^opt= 00000 seg^opt^acq= %h9555550555510001
+seg^opt^iss= %h9555550555510001 net^id^dir^rte=   pfv^limit^flag= %b00000000
+
+SEGMENT  3 = Acquirer data:
+data^frmt^acq= 00030 acqr^resp^code= 00 acqr^proc^code= 000000
+acqr^pos^code= 48 acqr^pos^ent^mode= 010 acqr^tot^type= 3
+acqr^merch^type= 5912 acqr^ext^resp=   acqr^trace^num=
+inbound^acqr^id= 57900291 acqr^RRN= 313107895198 acqr^set^date=
+acqr^auth^id= 280849 input^term^type=   merchant^number=   bits^Received= .
+acqr^intrn^netw= 000 unmatch^revl=   zero^pin^recvd=   other^priv^acq=
+
+SEGMENT  4 = Issuer data:
+data^frmt^iss= 00030 data^priv^iss= 00   3  579002     000000Y0511172409
+                   ISIA0X$PIA0X
+
+SEGMENT  8 = Transaction unique data:
+uniq^frmt= CV avs^address=   avs^result=   cvv2^result^acqr=
+cvv2^result^issr=   cvv2^presence^ind= 1 cvv2^response^type= 1
+cvv2^value^code= XXXX pos^id^result=   track1^name^result=   cavv^result=
+ccd^result=   ccd^atc^result=   uniq^info=   arqc^arpc^result=
+alt^cur^code=   alternate^amt= 000000000000 orig^rqst^amt^tran= 000000000000
+orig^rqst^amt^recon^acqr= 000000000000 orig^rqst^card^bill= 000000000000
+orig^rqst^amt^recon^issr= 000000000000
+
+SEGMENT 19 = Additional institution ids:
+cntry^orig^inst=   inst^orig=   cntry^frwd^inst=   inst^frwd= 57900291
+cntry^rec^inst=   rec^inst=   cntry^dest^inst^ib=   dest^inst^ib=
+cntry^dest^inst^ob=   dest^inst^ob=
+
+SEGMENT 20 = Additional data - national:
+savings^access= %b0000000000000000 cheque^access= %b0000000000000000  credit^ac
+cess= %b0000000000000000 loan^access= %b0000000000000000
+investmt^access %b0000000000000000 not^used=   multi^host^indicator=
+aust^post^adj^fld90=   misc^text^fld=
+      ..
+
+SEGMENT 21 = Private acquirer data:
+adtl^priv^acq= XDD2\A-f10a74ea-ffd0-4417-a2c0-c165\
+
+SEGMENT 24 = Tokenized data:
+number of tokens= 14
+tokenid= 71 tokenlen= 2 options= %h0000 Ext Token Area Offset= -00001
+tokenid= 1003 tokenlen= 92 options= %h0000
+Acqr CVV2= CCVXXXX\CCT1\CCI1\ECM31\SLI05\LEN020\XID......P.(.GiB..n...O\LEN02
+0\CAV.....P...11V.P......\
+tokenid= 1045 tokenlen= 6 options= %h0000 FCA tag= FCA02\
+tokenid= 2048 tokenlen= 40 options= %h0000
+FCA Format DE43= HERBALIFE AUSTRALASIA  Sy\
+tokenid= 591 tokenlen= 1 options= %h0000 EMV Partial Grade Tran= N
+tokenid= 213 tokenlen= 6 options= %h0000 PMC Name= $PPM1
+tokenid= 86 tokenlen= 2 options= %h0000 Bin Len= 00002
+tokenid= 208 tokenlen= 1 options= %h0000 Suppress Host Bal= 0
+tokenid= 590 tokenlen= 1 options= %h0000 Chip Fallback Flag= N
+tokenid= 58 tokenlen= 1 options= %h0000 Falcon Route Data= N  tokenid= 6 tokenl
+en= 18 options= %h0000 TD Info \SYDP2.$PTR13  10
+tokenid= 47 tokenlen= 6 options= %h0000
+TD Time Request= 11May2023 17:24:09:71
+tokenid= 1004 tokenlen= 5 options= %h0000 Issr CVV2= CCVM\
+tokenid= 5 tokenlen= 32 options= %h0000 CP Node Information= \SYDP2  \SYDP2
